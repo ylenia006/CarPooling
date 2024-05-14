@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserimento Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D1821;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #15222F;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            width: 90vw;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #B4CDED;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            grid-gap: 10px;
+        }
+
+        label {
+            color: #607A9D;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            color: #607A9D;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #B4CDED;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #607A9D;
+        }
+
+        a {
+            color: #B4CDED;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Inserisci i dati della vettura</h2>
+    <form action="processi/inserimentoVettura.php" method="post">
+        <label for="targa">Targa:</label>
+        <input type="text" id="targa" name="targa" required>
+        <label for="casaProduttrice">Casa Produttrice:</label>
+        <input type="text" id="casaProduttrice" name="casaProduttrice" required>
+        <label for="modello">Modello:</label>
+        <input type="text" id="modello" name="modello" required>
+        <label for="numeroPosti">Numero Posti:</label>
+        <input type="text" id="numeroPosti" name="numeroPosti" required>
+        <label for="colore">Colore:</label>
+        <input type="text" id="colore" name="colore" required>
+        <label for="annoImmatricolazione">Anno Immatricolazione:</label>
+        <input type="text" id="annoImmatricolazione" name="annoImmatricolazione" required>
+        <label for="chilometri">Chilometri:</label>
+        <input type="text" id="chilometri" name="chilometri" required>
+        <label for="carburante">Carburante:</label>
+        <input type="text" id="carburante" name="carburante" required>
+        <label for="cilindrata">Cilindrata:</label>
+        <input type="text" id="cilindrata" name="cilindrata" required>
+        <input type="submit" value="Inserisci">
+    </form>
+    <a href="../../../index.php" class="footer-link">Home page</a>
+</div>
+</body>
+</html>

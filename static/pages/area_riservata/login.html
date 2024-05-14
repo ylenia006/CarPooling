@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D1821; /* cambiato colore di sfondo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* rende il contenuto centrato verticalmente */
+        }
+
+        .container {
+            background-color: #15222F; /* cambiato colore di sfondo */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            width: 320px; /* aumentato un po' la larghezza del container */
+            text-align: center;
+        }
+
+        h2 {
+            color: #B4CDED; /* cambiato colore del testo del titolo */
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #607A9D; /* cambiato colore del testo delle etichette */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px; /* aumentato il padding */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #B4CDED; /* cambiato colore di sfondo del pulsante di invio */
+            color: #ffffff; /* cambiato colore del testo del pulsante di invio */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s; /* aggiunto effetto di transizione */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #607A9D; /* cambiato colore di sfondo al passaggio del mouse */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #B4CDED; /* cambiato colore del testo dei link */
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block; /* aggiunto per allineare orizzontalmente i link */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Login</h2>
+    <form action="processi/login.php" method="post">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="nome" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="cognome" placeholder="Password" required>
+        </div>
+        <input type="submit" value="Login">
+    </form>
+    <a href="registrazione.html">Registrati</a>
+    <a href="/index.php">Home page</a>
+</div>
+</body>
+</html>

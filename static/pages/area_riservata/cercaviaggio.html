@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco Viaggi Disponibili</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Elenco Viaggi Disponibili</h2>
+        <div id="viaggi">
+            <!-- Qui verranno visualizzati i viaggi -->
+        </div>
+        <form action="./processi/ricercaViaggio.php" method="post">
+            <label for="id_viaggio">Seleziona un viaggio:</label>
+            <select name="id_viaggio" id="id_viaggio">
+                <!-- Qui verranno inserite le opzioni dei viaggi -->
+            </select>
+            <br><br>
+            <input type="submit" value="Seleziona">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
